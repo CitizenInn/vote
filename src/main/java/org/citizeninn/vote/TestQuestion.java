@@ -1,6 +1,6 @@
 package org.citizeninn.vote;
 
-public class Test {
+public class TestQuestion {
 
 	public static void main(String[] args) {
 
