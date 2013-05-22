@@ -27,7 +27,20 @@ public class TestAppQuestion {
 		session.beginTransaction();
 		Question question = new Question();
 		question.setName("At what age person should be allowed to vote in presidential election?");
+
+		Answer answer1 = new Answer();
+		answer1.setName("16");
+
+		Answer answer2 = new Answer();
+		answer2.setName("18");
+
+		Answer answer3 = new Answer();
+		answer3.setName("21");
+
 		session.save(question);
+		session.save(answer1);
+		// session.save(answer2);
+		// session.save(answer3);
 		
 		session.getTransaction().commit();
 		session.close();
