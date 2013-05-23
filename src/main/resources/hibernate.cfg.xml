@@ -21,5 +21,6 @@
 			<!-- Drop and re-create the database schema on startup -->
 			<property name="hbm2ddl.auto">update</property>
 			<mapping class="org.citizeninn.vote.Question" />
+			<mapping class="org.citizeninn.vote.Answer" />
 	</session-factory>
 </hibernate-configuration>

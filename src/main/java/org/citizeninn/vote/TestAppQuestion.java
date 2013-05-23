@@ -37,10 +37,14 @@ public class TestAppQuestion {
 		Answer answer3 = new Answer();
 		answer3.setName("21");
 
+		question.addAnswer(answer1);
+		question.addAnswer(answer2);
+		question.addAnswer(answer3);
+		
 		session.save(question);
-		session.save(answer1);
-		// session.save(answer2);
-		// session.save(answer3);
+
+
+
 		
 		session.getTransaction().commit();
 		session.close();
