@@ -14,7 +14,7 @@ public class TestAppUser {
 	public static void main(String[] args) throws Exception {
 
 		session = HibernateUtil.setUp();
-
+		session.beginTransaction();
 
 		User user = new User();
 
@@ -23,6 +23,9 @@ public class TestAppUser {
 		user.setGender(0);
 
 		session.save(user);
+
+		session.getTransaction().commit();
+		session.close();
 
 	}
 
