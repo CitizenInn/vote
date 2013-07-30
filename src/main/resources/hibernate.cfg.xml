@@ -22,5 +22,6 @@
 			<property name="hbm2ddl.auto">update</property>
 			<mapping class="org.citizeninn.vote.Question" />
 			<mapping class="org.citizeninn.vote.Answer" />
+			<mapping class="org.citizeninn.User" />
 	</session-factory>
 </hibernate-configuration>

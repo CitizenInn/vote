@@ -16,12 +16,7 @@ public class TestAppQuestion {
 		System.out.println("Working Directory = "
 				+ System.getProperty("user.dir"));
 
-		try {
-			setUp();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+
 
 		Session session = sessionFactory.openSession();
 		session.beginTransaction();
